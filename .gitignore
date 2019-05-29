@@ -1,0 +1,7 @@
+﻿*.prj
+*.pui
+compass.VR/work/
+*.hpp linguist-language=sqf
+*.cpp linguist-language=sqf
+*.gui linguist-language=sqf
+*.data linguist-language=sqf

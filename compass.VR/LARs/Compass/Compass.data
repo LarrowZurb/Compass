@@ -1,0 +1,37 @@
+
+
+#define COLOR_PROFILE \
+	"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.77])", \
+	"(profilenamespace getvariable ['GUI_BCG_RGB_G',0.51])", \
+	"(profilenamespace getvariable ['GUI_BCG_RGB_B',0.08])", \
+	1 \
+}
+
+//Grey scales
+#define COLOR_BLACK { 0, 0, 0, 1 } // Black
+#define COLOR_DARK { 0.102, 0.102, 0.102, 1 } //26
+#define COLOR_MID { 0.208, 0.208, 0.208, 1 } //53
+#define COLOR_LIGHT { 0.376, 0.349, 0.349, 1 } //96, 89, 89
+#define COLOR_OFFWHITE { 0.831, 0.831, 0.831, 1 } //212
+#define COLOR_WHITE { 1, 1, 1, 1 } //white
+
+//Colors
+#define COLOR_GREEN { 0, 1, 0, 1 }
+#define COLOR_RED { 0.694, 0.157, 0.157, 1 } //177, 40, 40
+#define COLOR_ORANGE { 0.910, 0.561, 0.145, 1 } //232, 143, 37
+
+//Transparent
+#define COLOR_TRANS { 0, 0, 0, 0 }
+
+#define TRUE 1
+#define FALSE 0
+
+
+//COMPASS SETTINGS
+class LARs_UICompass_settings {
+	scale = 0.4;
+	backgroundColor[] = COLOR_TRANS;
+	compassColor[] = COLOR_OFFWHITE;
+	centerColor[] = COLOR_ORANGE;
+	bottom = FALSE;
+};

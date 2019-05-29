@@ -1,0 +1,11 @@
+
+
+class Compass {
+	tag = "LARs_Compass";
+	class Compass {
+		file = "LARs\Compass\functions";
+		class init { postInit = 1; };
+		class update {};
+		class configure {};
+	};
+};

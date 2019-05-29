@@ -1,0 +1,11 @@
+
+
+#include "LARs\Compass\Compass.data"
+
+class RscTitles {
+	#include "LARs\Compass\ui\compass.gui"
+};
+
+class CfgFunctions {
+	#include "LARs\Compass\functions\Compass.fncs"
+};

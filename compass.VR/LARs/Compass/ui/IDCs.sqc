@@ -1,0 +1,8 @@
+
+#define COMPASS_IDD			20100
+
+#define COMPASS_GRP			20101
+#define COMPASS_IMG			100
+#define COMPASS_EMPTYMAP	200
+#define COMPASS_BACK		300
+#define COMPASS_CENTER		400
