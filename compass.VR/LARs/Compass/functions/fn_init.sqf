@@ -7,6 +7,8 @@ if ( _init == "postInit" ) exitWith {
 
 waitUntil{ !isNull findDisplay 46 };
 
+LARs_compass_icons = [];
+
 //_display = findDisplay 46 createDisplay "LARs_UICompass";
 
 "LARs_UICompass" call BIS_fnc_rscLayer cutRsc [ "LARs_UICompass", "PLAIN", -1, false ];

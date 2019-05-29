@@ -10,6 +10,8 @@ LARs_compass_scale = getNumber( _config >> "scale" );
 _backgroundColor = getArray( _config >> "backgroundColor" );
 _compassColor = getArray( _config >> "compassColor" );
 _centerColor = getArray( _config >> "centerColor" );
+LARs_compass_iconColor = getArray( _config >> "iconColor" );
+LARs_compass_activeIconScale = getNumber( _config >> "activeIconScale" );
 _bottom = [ false, true ] select getNumber( _config >> "bottom" );
 
 {

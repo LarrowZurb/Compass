@@ -33,5 +33,7 @@ class LARs_UICompass_settings {
 	backgroundColor[] = COLOR_TRANS;
 	compassColor[] = COLOR_OFFWHITE;
 	centerColor[] = COLOR_ORANGE;
+	iconColor[] = COLOR_GREEN;
+	activeIconScale = 1.5;
 	bottom = FALSE;
 };

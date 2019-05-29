@@ -7,5 +7,6 @@ class Compass {
 		class init { postInit = 1; };
 		class update {};
 		class configure {};
+		class icon {};
 	};
 };
