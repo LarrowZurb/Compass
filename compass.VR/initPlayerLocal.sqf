@@ -1,4 +1,4 @@
 
 waitUntil { time > 0 };
 
-icon_id = [ "ADD", [ "attack", bob ] ] call LARs_compass_fnc_icon;
+//bob_compass_iconID = [ "ADD", [ "testIconFlash", bob ] ] call LARs_compass_fnc_icon;

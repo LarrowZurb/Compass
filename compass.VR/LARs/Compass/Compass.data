@@ -1,6 +1,7 @@
 
+////#Region "some default values"
 
-#define COLOR_PROFILE \
+#define COLOR_PROFILE {\
 	"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.77])", \
 	"(profilenamespace getvariable ['GUI_BCG_RGB_G',0.51])", \
 	"(profilenamespace getvariable ['GUI_BCG_RGB_B',0.08])", \
@@ -26,14 +27,59 @@
 #define TRUE 1
 #define FALSE 0
 
+//Default Arma DIK codes
+#include "\a3\ui_f\hpp\definedikcodes.inc"
+
+//#End Region
+
 
 //COMPASS SETTINGS
 class LARs_UICompass_settings {
+
+	//Overall scale of the compass ui
 	scale = 0.4;
-	backgroundColor[] = COLOR_TRANS;
-	compassColor[] = COLOR_OFFWHITE;
-	centerColor[] = COLOR_ORANGE;
-	iconColor[] = COLOR_GREEN;
-	activeIconScale = 1.5;
+	//Show compass UI at bottom of screen
 	bottom = FALSE;
+
+	//Color of compass background
+	backgroundColor[] = COLOR_TRANS;
+	//Color of compass dial
+	compassColor[] = COLOR_OFFWHITE;
+	//Color of compass heading marker
+	centerColor[] = COLOR_ORANGE;
+
+	//Default color for any compass icons
+	iconColor[] = COLOR_GREEN;
+	//Scale of compass active icon - only one icon can be active at any time
+	activeIconScale = 1.5;
+	//Compass icons size in pixels
+	iconSize = 48;
+
+	//DIK code of key used to toggle display of compass UI
+	toggleKey = DIK_J; /*0x23*/
+};
+
+//CUSTOM COMPASS ICONS - otherwise icon must be a type from ( configFile >> "CfgTaskTypes" )
+class LARs_CompassIcons {
+
+	class testIcon {
+		icon = "LARs\Compass\ui\images\info_icon.paa";
+
+		//optional
+		//color[] = {};
+		//flashColor[] = {};
+		//flashDuration = 1;
+		//pingPong = 1;
+	};
+
+	class testIconFlash {
+		icon = "LARs\Compass\ui\images\info_icon.paa";
+
+		//optional
+		color[] = COLOR_WHITE;
+		flashColor[] = COLOR_GREEN;
+		flashDuration = 1;
+		pingPong = FALSE;
+	};
+
 };

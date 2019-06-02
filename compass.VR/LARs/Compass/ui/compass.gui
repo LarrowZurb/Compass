@@ -20,6 +20,7 @@ class LARs_UICompass {
 			w = 768 * pixelW;
 			h = 64 * pixelH;
 
+
 			class controls {
 
 				class emptyMap : ctrlMapEmpty {
@@ -41,7 +42,7 @@ class LARs_UICompass {
 					w = 768 * pixelW;
 					h = 64 * pixelH;
 
-					text = "#(rgb,8,8,3)color(1,1,1,1)";
+					//text = "#(rgb,8,8,3)color(1,1,1,1)";
 				};
 
 				class compassPicture : ctrlStaticPictureKeepAspect {
@@ -52,7 +53,7 @@ class LARs_UICompass {
 					w = 4096 * pixelW;
 					h = 64 * pixelH;
 
-					text = "LARs\Compass\ui\images\compass.paa";
+					//text = "LARs\Compass\ui\images\compass.paa";
 				};
 
 				class center : ctrlStaticPictureKeepAspect {
@@ -63,7 +64,7 @@ class LARs_UICompass {
 					w = 16 * pixelW;
 					h = 64 * pixelH;
 
-					text = "LARs\Compass\ui\images\center.paa";
+					//text = "LARs\Compass\ui\images\center.paa";
 				};
 			};
 		};

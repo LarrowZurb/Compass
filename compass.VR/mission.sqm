@@ -8,7 +8,7 @@ class EditorData
 	toggles=101;
 	class ItemIDProvider
 	{
-		nextID=5;
+		nextID=6;
 	};
 	class Camera
 	{
@@ -18,17 +18,25 @@ class EditorData
 binarizationWanted=0;
 addons[]=
 {
-	"A3_Characters_F"
+	"A3_Characters_F",
+	"A3_Structures_F_Civ_Camping"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=1;
+		items=2;
 		class Item0
 		{
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item1
+		{
+			className="A3_Structures_F";
+			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -60,7 +68,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1;
+		items=2;
 		class Item0
 		{
 			dataType="Group";
@@ -95,6 +103,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="bob_compass_iconID = [ ""ADD"", [ ""testIconFlash"", this ] ] call LARs_compass_fnc_icon;";
 						name="bob";
 					};
 					id=3;
@@ -147,6 +156,22 @@ class Mission
 			{
 			};
 			id=0;
+		};
+		class Item1
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4089.272,5.219584,4168.4868};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this setVariable[ ""LARs_compass_icon"", ""intel"" ];";
+			};
+			id=5;
+			type="Land_Campfire_F";
 		};
 	};
 };

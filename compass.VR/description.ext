@@ -1,5 +1,5 @@
 
-
+//See tis file for compass settings
 #include "LARs\Compass\Compass.data"
 
 class RscTitles {
@@ -9,3 +9,4 @@ class RscTitles {
 class CfgFunctions {
 	#include "LARs\Compass\functions\Compass.fncs"
 };
+
